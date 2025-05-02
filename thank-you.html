@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Advocate Nemavathi S</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a3e72;
+            --secondary: #d4af37;
+            --accent: #e74c3c;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --text: #444;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        /* Thank You Section */
+        .thank-you {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 0;
+            background: linear-gradient(rgba(245, 240, 230, 0.9), rgba(245, 240, 230, 0.9)), 
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23d4af3720"><path d="M50 5L15 40h20v40h30V40h20z"/><circle cx="50" cy="30" r="5"/></svg>') center/cover no-repeat;
+        }
+        
+        .thank-you-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid var(--secondary);
+        }
+        
+        .thank-you-content:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23d4af3710"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>') center/contain no-repeat;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .checkmark {
+            width: 100px;
+            height: 100px;
+            background: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .checkmark i {
+            color: white;
+            font-size: 50px;
+        }
+        
+        .thank-you h1 {
+            font-size: 36px;
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .thank-you p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .thank-you .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid var(--secondary);
+        }
+        
+        .btn:hover {
+            background: transparent;
+            color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-whatsapp {
+            background: #25d366;
+            color: white;
+            border-color: #25d366;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            color: white;
+            border-color: #128C7E;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .thank-you-content {
+                padding: 30px 20px;
+            }
+            
+            .thank-you h1 {
+                font-size: 28px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Adv. <span>S.Nemavathi</span></a>
+        </div>
+    </header>
+
+    <!-- Thank You Section -->
+    <section class="thank-you">
+        <div class="container">
+            <div class="thank-you-content">
+                <div class="checkmark">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h1>Thank You for Your Message!</h1>
+                <p>Your consultation request has been successfully submitted to <span class="highlight">Advocate S. Nemavathi</span>.</p>
+                <p>We have received your details regarding <span id="case-type" class="highlight">your legal matter</span> and will contact you shortly at the phone number or email you provided.</p>
+                
+                <div class="action-buttons">
+                    <a href="index.html" class="btn">Return to Home</a>
+                    <a href="https://wa.me/919487592525" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <a href="tel:+919487592525" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#practice">Practice Areas</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Advocate S. Nemavathi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Display the case type if it was passed in the URL
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const caseType = urlParams.get('subject');
+            
+            if(caseType) {
+                document.getElementById('case-type').textContent = caseType;
+            }
+            
+            // Set current year
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
