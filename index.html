@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Advocate S. Nemavathi - Experienced High Court lawyer in Tiruchirappalli specializing in family law, property disputes, and civil litigation with 28+ years of practice. Central Government Standing Counsel and Notary Public.">
-    <meta name="keywords" content="Tiruchirappalli advocate, Tiruchirappalli advocate, High Court lawyer, family law expert, property dispute lawyer, divorce lawyer Tiruchirappalli, divorce lawyer Tiruchirappalli, child custody advocate, civil litigation lawyer, Central Government Standing Counsel, legal notary public,Tiruchirappalli court lawyer, Tiruchirappalli court lawyer">
+    <meta name="keywords" content="Tiruchirappalli advocate, Trichy advocate, Trichy High Court lawyer, Tiruchirappallis family law expert, Trichy family law expert, property dispute lawyer, divorce lawyer Tiruchirappalli, divorce lawyer Trichy, child custody advocate, civil litigation lawyer, Central Government Standing Counsel, legal notary public,Tiruchirappalli court lawyer, Trichy court lawyer">
     <meta name="author" content="Advocate S. Nemavathi">
     <meta name="geo.region" content="IN-TN">
     <meta name="geo.placename" content="Tiruchirappalli">
@@ -488,6 +488,204 @@
             margin-bottom: 20px;
         }
         
+        /* Stats Section */
+        .stats {
+            padding: 80px 0;
+            background: linear-gradient(rgba(26, 62, 114, 0.9), rgba(26, 62, 114, 0.9)), url('images/law-books.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .stat-item {
+            padding: 30px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        
+        .stat-text {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 80px 0;
+            background: var(--light);
+            position: relative;
+        }
+        
+        .testimonial-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            position: relative;
+        }
+        
+        .testimonial-carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            margin-top: 50px;
+            padding-bottom: 30px;
+        }
+        
+        .testimonial-carousel::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .testimonial-slide {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 60px;
+            color: rgba(212, 175, 55, 0.2);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            margin-bottom: 20px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        
+        .author-info h4 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            font-size: 14px;
+            color: #777;
+        }
+        
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .testimonial-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .testimonial-dot.active {
+            background: var(--secondary);
+            transform: scale(1.2);
+        }
+        
+        /* Map Section */
+        .map-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .map-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .map-embed {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .map-embed iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .map-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .map-info h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .map-info p {
+            margin-bottom: 15px;
+        }
+        
+        .plus-code {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            margin-top: 10px;
+        }
+        
         /* Contact */
         .contact {
             padding: 80px 0;
@@ -694,7 +892,8 @@
         /* Responsive */
         @media (max-width: 992px) {
             .about-content,
-            .contact-container {
+            .contact-container,
+            .map-container {
                 flex-direction: column;
             }
             
@@ -827,6 +1026,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#practice">Practice Areas</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -874,7 +1074,7 @@
                     <div class="credentials">
                         <div class="credential-item" itemprop="memberOf" itemscope itemtype="https://schema.org/Organization">
                             <i class="fas fa-balance-scale"></i>
-                            <span>Enrolled with the <span itemprop="name">Bar Council of Tamil Nadu and Puducherry</span> since 1998</span>
+                            <span>Enrolled with the <span itemprop="name">Bar Council of Tamil Nadu and Puducherry</span> since 1995</span>
                         </div>
                         <div class="credential-item">
                             <i class="fas fa-stamp"></i>
@@ -985,6 +1185,202 @@
         </div>
     </section>
 
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">My Legal Practice in Numbers</h2>
+                <p style="color: rgba(255,255,255,0.8);">Trusted by clients for over 28 years with proven results</p>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="28">0</div>
+                    <div class="stat-text">Years of Experience</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" data-count="2500">0</div>
+                    <div class="stat-text">Cases Handled</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-text">Free Consultations</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" data-count="95">0</div>
+                    <div class="stat-text">Client Satisfaction %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What my clients say about my legal services</p>
+            </div>
+            
+            <div class="testimonial-carousel">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>Advocate Nemavathi handled my divorce case with utmost professionalism and care. Her knowledge of family law is exceptional, and she guided me through every step of the process. Thanks to her expertise, I got a fair settlement.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <!-- <img src="images/client1.jpg" alt="Client testimonial"> -->
+                            <div class="author-info">
+                                <h4>R. Balaji</h4>
+                                <p>Divorce Case, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>I was struggling with a complex property dispute for years. Advocate Nemavathi took my case and resolved it within 8 months. Her strategic approach and attention to detail made all the difference. Highly recommended!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>S. Meena</h4>
+                                <p>Property Dispute, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>As a working woman facing domestic violence, I was scared to approach the legal system. Advocate Nemavathi not only provided excellent legal representation but also emotional support. She helped me get protection and a fresh start.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>P. Sunitha</h4>
+                                <p>Domestic Violence Case, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>After my father's passing, our family faced inheritance issues. Advocate Nemavathi's expertise in succession law helped us resolve matters amicably without lengthy court battles. Her mediation skills are truly remarkable.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>M. Rajesh</h4>
+                                <p>Inheritance Case, 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>I needed urgent notary services for an important document. Advocate Nemavathi accommodated my request promptly and completed the notarization with perfect attention to legal requirements. Very professional service.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>S. Malar</h4>
+                                <p>Notary Service, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 6 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>My child custody case was emotionally draining. Advocate Nemavathi fought for my rights while ensuring my child's best interests were protected. Her compassionate yet strong approach made all the difference in court.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>V. Geetha</h4>
+                                <p>Child Custody Case, 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <div class="testimonial-dot active" data-slide="0"></div>
+                <div class="testimonial-dot" data-slide="1"></div>
+                <div class="testimonial-dot" data-slide="2"></div>
+                <div class="testimonial-dot" data-slide="3"></div>
+                <div class="testimonial-dot" data-slide="4"></div>
+                <div class="testimonial-dot" data-slide="5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Office Location</h2>
+                <p>Visit my office in Tiruchirappalli for legal consultations</p>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-embed">
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1234567890123!2d78.7047!3d10.7905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ3JzI1LjgiTiA3OMKwNDInMTYuOSJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe> -->
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.600954782513!2d78.682267!3d10.760804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa8ac7d485dcab%3A0x6b64bc1f03ed3c8c!2sNemavathi%20and%20Ravi%20Advocates!5e0!3m2!1sen!2sin!4v1714677000000!5m2!1sen!2sin"
+                      width="100%"
+                      height="400"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+                
+                <div class="map-info">
+                    <h3>Advocate S. Nemavathi</h3>
+                    <p>3, Marudhanayagam Complex</p>
+                    <p>Sathanur Main Road, LIC Colony</p>
+                    <p>Ayyappan Nagar, Tiruchirappalli - 620021</p>
+                    <p>Tamil Nadu, India</p>
+
+                    <div class="contact-item" style="margin-top: 20px;">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <a href="tel:+919487592525">+91 94875 92525</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <p>Mon-Sat: 10:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://maps.app.goo.gl/xFejJ6FcwQU5VpWm7?g_st=com.google.maps.preview.copy" class="btn" style="margin-top: 20px; display: inline-block;">
+                        <i class="fas fa-map-marker-alt"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section with schema markup -->
     <section class="contact" id="contact" itemscope itemtype="https://schema.org/ContactPoint">
         <div class="container">
@@ -1019,7 +1415,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <a href="mailto:advocatenemavathigmail.com">advocatenemavathi@gmail.com</a>
+                                <a href="mailto:nemavathi.s@gmail.com">nemavathi.s@gmail.com</a>
                             </div>
                         </div>                        
                     </div>
@@ -1027,7 +1423,7 @@
                 
                 <div class="contact-form">
                     <h3>Send a Message</h3>
-                    <form id="contact-form" action="https://formsubmit.co/advocatenemavathi@gmail.com" method="POST">
+                    <form id="contact-form" action="https://formsubmit.co/nemavathi.s@gmail.com" method="POST">
                         <!-- FormSubmit Configuration -->
                         <input type="hidden" name="_subject" value="New Consultation Request from Website">
                         <input type="hidden" name="_next" value="https://advocatenemavathi.com/thank-you.html">
@@ -1125,7 +1521,7 @@
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">3, Marudhanayagam Complex, Sathanur Main Road, LIC Colony, Ayyappan Nagar, Tiruchirappalli, 620021</span></li>
                         <li><i class="fas fa-phone"></i> <span itemprop="telephone">+91 94875 92525</span></li>
-                        <li><i class="fas fa-envelope"></i> <span itemprop="email">advocatenemavathi@gmail.com</span></li>
+                        <li><i class="fas fa-envelope"></i> <span itemprop="email">nemavathi.s@gmail.com</span></li>
                     </ul>
                 </div>
             </div>
@@ -1187,7 +1583,6 @@
 
 
         // Form submission handling
-
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const form = e.target;
@@ -1220,6 +1615,117 @@
                 submitBtn.innerHTML = 'Send Message';
             });
         });
+
+        // Animate statistics counter
+        function animateStats() {
+            const statItems = document.querySelectorAll('.stat-item');
+            
+            statItems.forEach(item => {
+                const numberElement = item.querySelector('.stat-number');
+                const target = parseInt(numberElement.getAttribute('data-count'));
+                const duration = 2000; // Animation duration in ms
+                const step = target / (duration / 16); // 60fps
+                let current = 0;
+                
+                const counter = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        clearInterval(counter);
+                        current = target;
+                    }
+                    numberElement.textContent = Math.floor(current);
+                }, 16);
+            });
+        }
+        
+        // Initialize stats animation when section comes into view
+        const statsSection = document.querySelector('.stats');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(statsSection);
+
+        // Testimonial Carousel
+        const carousel = document.querySelector('.testimonial-carousel');
+        const dots = document.querySelectorAll('.testimonial-dot');
+        let currentSlide = 0;
+        const slideCount = document.querySelectorAll('.testimonial-slide').length;
+        
+        // Set up dot navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                goToSlide(index);
+            });
+        });
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+        
+        function updateCarousel() {
+            carousel.scrollTo({
+                left: currentSlide * carousel.offsetWidth,
+                behavior: 'smooth'
+            });
+            
+            // Update active dot
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        // Auto-advance slides
+        function autoAdvance() {
+            currentSlide = (currentSlide + 1) % slideCount;
+            updateCarousel();
+        }
+        
+        let slideInterval = setInterval(autoAdvance, 5000);
+        
+        // Pause on hover
+        carousel.addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+        
+        carousel.addEventListener('mouseleave', () => {
+            slideInterval = setInterval(autoAdvance, 5000);
+        });
+        
+        // Handle swipe gestures for touch devices
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            clearInterval(slideInterval);
+        }, {passive: true});
+        
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+            slideInterval = setInterval(autoAdvance, 5000);
+        }, {passive: true});
+        
+        function handleSwipe() {
+            const threshold = 50;
+            
+            if (touchEndX < touchStartX - threshold) {
+                // Swipe left - next slide
+                currentSlide = (currentSlide + 1) % slideCount;
+            } else if (touchEndX > touchStartX + threshold) {
+                // Swipe right - previous slide
+                currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+            }
+            
+            updateCarousel();
+        }
     </script>
 </body>
 </html>
