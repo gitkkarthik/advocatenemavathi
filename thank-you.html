@@ -188,6 +188,19 @@
             color: white;
             border-color: #128C7E;
         }
+
+        /* Phone link styling */
+        .phone-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .phone-link:hover {
+            color: var(--secondary);
+            text-decoration: underline;
+        }
         
         /* Footer */
         footer {
@@ -257,6 +270,8 @@
                 <p>Your consultation request has been successfully submitted to <span class="highlight">Advocate S. Nemavathi</span>.</p>
                 <p>We have received your details regarding <span id="case-type" class="highlight">your legal matter</span> and will contact you shortly at the phone number or email you provided.</p>
                 
+                <p>For immediate assistance, you can call us directly at <a href="tel:+919487592525" class="phone-link">+91 94875 92525</a> or WhatsApp us at <a href="https://wa.me/919487592525" class="phone-link">+91 94875 92525</a>.</p>
+                
                 <div class="action-buttons">
                     <a href="index.html" class="btn">Return to Home</a>
                     <a href="https://wa.me/919487592525" class="btn btn-whatsapp">
@@ -280,6 +295,11 @@
                 <a href="index.html#contact">Contact</a>
             </div>
             <p class="copyright">&copy; <span id="year"></span> Advocate S. Nemavathi. All Rights Reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="tel:+919487592525" style="color: white; text-decoration: none;">
+                    <i class="fas fa-phone"></i> +91 94875 92525
+                </a>
+            </p>
         </div>
     </footer>
 
